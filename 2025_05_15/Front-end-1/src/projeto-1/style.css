@@ -1,0 +1,14 @@
+body{
+    background-color: gray;                     /* Cor de fundo da página */
+    text-align: center;                           /* Centraliza o texto horizontalmente */
+    margin-top: 5rem;                             /* Espaço superior de 5 rem */
+    font-family: 'Arial Narrow Bold', sans-serif; /* Fonte usada no texto */
+}
+
+img {
+    border-radius: 50%;                           /* Deixa a imagem em formato circular */
+}
+
+p {
+    margin-top: 2rem;                             /* Espaço superior de 2 rem nos parágrafos */
+}
