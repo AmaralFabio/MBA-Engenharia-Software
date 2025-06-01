@@ -1,4 +1,4 @@
-# Use a imagem Python 3.12
+# Use a imagem Python 3.13
 FROM python:3.13
 
 # Defina o diretório de trabalho no contêiner
