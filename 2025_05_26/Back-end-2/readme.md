@@ -40,6 +40,8 @@ uvicorn app:app --host 0.0.0.0 --port 4000 --reload
 
 Para rodar o projeto Django, siga os passos abaixo no terminal, dentro da pasta do projeto:
 
+   > django-admin startproject setup .
+   
 1. Aplique as migrações do banco de dados:
    ```
    python manage.py migrate
