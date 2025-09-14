@@ -11,7 +11,7 @@ from diagrams.aws.network import ELB
 from diagrams.onprem.client import Users
 
 def create_web_architecture():
-    with Diagram("Arquitetura Web Simples - USP", filename="/app/output/web_architecture", show=False):
+    with Diagram("Arquitetura Web Simples - USP", filename="/app/output/01-web_architecture", show=False):
         users = Users("Usuários")
         
         with Cluster("AWS Cloud"):
@@ -21,9 +21,9 @@ def create_web_architecture():
                 web_servers = [
                     EC2("Web Server 1"),
                     EC2("Web Server 2"),
-                    EC2("Web Server 3")
-#                   EC2("Web Server 4")
-#                   EC2("Web Server 5")
+                    EC2("Web Server 3"),
+                    EC2("Web Server 4"),
+                    EC2("Web Server 5")
                 ]
             
             with Cluster("Database"):
@@ -36,4 +36,4 @@ def create_web_architecture():
 
 if __name__ == "__main__":
     create_web_architecture()
-    print("Diagrama 'Arquitetura Web Simples' criado em output/web_architecture.png")
+    print("Diagrama 'Arquitetura Web Simples' criado em output/01-web_architecture.png")
