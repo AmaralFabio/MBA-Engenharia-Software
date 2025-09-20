@@ -20,6 +20,7 @@ cd exemplo1-s3
 terraform  init
 terraform  plan  -out=plan_exemplo1_s3 
 terraform  apply  plan_exemplo1_s3
+terraform  destroy
 cd ..
 ```
 
