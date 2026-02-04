@@ -13,5 +13,8 @@ WORKDIR /workspace
 RUN pip install --upgrade pip \
     && pip install ipykernel
 
+# Instale as bibliotecas do notebook
+RUN pip install pandas numpy statsmodels matplotlib seaborn statstests openpyxl
+    
 # Container fica rodando
 CMD ["sleep", "infinity"]
